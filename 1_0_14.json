@@ -1,33 +1,33 @@
 {
   "models": [
     {
-        "name": "Gemma-4-E2B-it-Sunbird",
-        "modelId": "yigagilbert/gemma-4-e2b-mixed-sft-fft-litert-lm",
-        "modelFile": "model.litertlm",
-        "commitHash": "4eabfb1",
-        "description": "Custom Gemma 4 E2B LiteRT-LM variant with multilingual support for tutoring and audio understanding.",
-        "sizeInBytes": 5443879731,
-        "defaultConfig": {
-            "topK": 40,
-            "topP": 0.95,
-            "temperature": 0.7,
-            "accelerators": "cpu,gpu",
-            "maxContextLength": 32768,
-            "maxTokens": 1024
-        },
-        "taskTypes": [
-            "llm_chat",
-            "llm_agent_chat"
-        ],
-        "llmSupportImage": false,
-        "llmSupportAudio": true,
-        "capabilities": [
-            "llm_thinking"
-        ],
-        "bestForTaskTypes": [
-            "llm_chat"
-        ],
-        "runtimeType": "litert_lm"
+      "name": "Gemma-4-E2B-it-Sunbird",
+      "modelId": "yigagilbert/gemma-4-e2b-mixed-sft-fft-litert-lm",
+      "modelFile": "model.litertlm",
+      "commitHash": "4eabfb1",
+      "description": "Custom Gemma 4 E2B LiteRT-LM variant with multilingual support for tutoring.",
+      "sizeInBytes": 5443879731,
+      "defaultConfig": {
+        "topK": 40,
+        "topP": 0.95,
+        "temperature": 0.7,
+        "accelerators": "cpu,gpu",
+        "maxContextLength": 32768,
+        "maxTokens": 1024
+      },
+      "taskTypes": [
+        "llm_chat",
+        "llm_agent_chat"
+      ],
+      "llmSupportImage": false,
+      "llmSupportAudio": false,
+      "capabilities": [
+        "llm_thinking"
+      ],
+      "bestForTaskTypes": [
+        "llm_chat"
+      ],
+      "runtimeType": "litert_lm"
     },
     {
       "name": "Gemma-4-E2B-it",
@@ -37,7 +37,7 @@
       "sizeInBytes": 2588147712,
       "minDeviceMemoryInGb": 8,
       "commitHash": "6e5c4f1e395deb959c494953478fa5cec4b8008f",
-      "llmSupportImage": true,
+      "llmSupportImage": false,
       "llmSupportAudio": true,
       "capabilities": ["llm_thinking", "speculative_decoding"],
       "defaultConfig": {
